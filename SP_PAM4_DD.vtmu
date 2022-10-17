@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><MASTER2 author="Administrator" description="" domain="Auto" encryptver="" keywords="" product="VPI_TMM_OPTICALSYSTEMS.pro" ptName="SP_PAM4_DD_vtmu" resVersion="" ver="2.0">
+<ENCRYPTION __key="encryption" password="">
+<CONTENTS __key="contents">
+<TOPOLOGY __key="topology">
+<INSTANCE __key="instances" instanceId="SignalAnalyzer_vtms7" master="URN:VPI_LIB::TC Modules\Analyzers\SignalAnalyzer.vtms:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" x="115.0" y="31.0"/>
+<SETTING __key="settings" state="SettingsSource" value="AnalyzerFile"/>
+<SETTING __key="settings" state="AnalyzerMode" value="StartAutomatically"/>
+<SETTING __key="settings" state="InitialAnalysisType" value="Spectrum"/>
+<SETTING __key="settings" state="Title" value="RX_DMT_PD"/>
+<SETTING __key="settings" state="Settings" value=""/>
+<SETTING __key="settings" state="SettingsFile" value=""/>
+<SETTING __key="settings" state="InternalVisualizersList" value=""/>
+<SETTING __key="settings" state="Active" value="Off"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="SignalAnalyzer_vtms5" master="URN:VPI_LIB::TC Modules\Analyzers\SignalAnalyzer.vtms:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" x="123.0" y="30.0"/>
+<SETTING __key="settings" state="SettingsSource" value="AnalyzerFile"/>
+<SETTING __key="settings" state="AnalyzerMode" value="StartAutomatically"/>
+<SETTING __key="settings" state="InitialAnalysisType" value="Spectrum"/>
+<SETTING __key="settings" state="Title" value="RX_DMT_PD_LPF"/>
+<SETTING __key="settings" state="Settings" value=""/>
+<SETTING __key="settings" state="SettingsFile" value=""/>
+<SETTING __key="settings" state="InternalVisualizersList" value=""/>
+<SETTING __key="settings" state="Active" value="Off"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="111" master="URN:VPI_LIB::TC Modules\Analyzers\ViPowermeter.vtmg:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" rot="270" x="47.0" y="25.0"/>
+<SETTING __key="settings" state="LimitBandwidth" value="Off"/>
+<SETTING __key="settings" state="CenterFrequency" unit="Hz" value="193.1e12"/>
+<SETTING __key="settings" state="Bandwidth" unit="Hz" value="100e9"/>
+<SETTING __key="settings" state="MeasMode" value="TOTAL"/>
+<SETTING __key="settings" state="IncludeSampledSignals" value="On"/>
+<SETTING __key="settings" state="IncludeParameterizedSignals" value="On"/>
+<SETTING __key="settings" state="IncludeNoiseBins" value="On"/>
+<SETTING __key="settings" state="PolarizFilter" value="None"/>
+<SETTING __key="settings" state="OutputUnits" value="dBm"/>
+<SETTING __key="settings" state="ApplyWindow" value="Welch"/>
+<SETTING __key="settings" state="Title" value="Reciever_Optical Power"/>
+<SETTING __key="settings" state="Geometry" value="200x150+0+0"/>
+<SETTING __key="settings" state="DecimalPlaces" value="3"/>
+<SETTING __key="settings" state="Overwrite" value="OVERWRITE"/>
+<SETTING __key="settings" state="OutputFilename" value=""/>
+<SETTING __key="settings" state="DisplayWindow" value="On"/>
+<SETTING __key="settings" state="Active" value="Off"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="DownSample_vtms1" master="URN:VPI_LIB::TC Modules\Signal Processing\Control Elements\Multirate Operations\DownSample.vtms:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" x="135.0" y="36.0"/>
+<SETTING __key="settings" state="factor" value="downSample"/>
+<SETTING __key="settings" state="phase" value="0"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="PMD_Emulator_vtms1" master="URN:VPI_LIB::TC Modules\Polarization Components\PMD_Emulator.vtms:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" x="69.0" y="36.0"/>
+<SETTING __key="settings" state="ReferenceFrequency" unit="Hz" value="193.1e12"/>
+<SETTING __key="settings" state="ModelType" value="BruyereKogelnik"/>
+<SETTING __key="settings" state="PMD_Vector_Direction" value="SlowPSP"/>
+<SETTING __key="settings" showOnSchematic="true" state="DGD" unit="s" value="8e-12"/>
+<SETTING __key="settings" state="PCD" unit="s^2" value="0.2267*DGD*DGD"/>
+<SETTING __key="settings" state="PSD" unit="s^2" value="0.7236*DGD*DGD"/>
+<SETTING __key="settings" state="AdjustInputVectors" value="Off"/>
+<SETTING __key="settings" state="AdjustOutputVectors" value="Off"/>
+<SETTING __key="settings" state="SOP_Representation" value="Azimuth_Ellipticity"/>
+<SETTING __key="settings" state="InputPMD_Azimuth" unit="deg" value="0"/>
+<SETTING __key="settings" state="InputPMD_Ellipticity" unit="deg" value="0"/>
+<SETTING __key="settings" state="InputPMD_S1" value="1"/>
+<SETTING __key="settings" state="InputPMD_S2" value="0"/>
+<SETTING __key="settings" state="InputPMD_S3" value="0"/>
+<SETTING __key="settings" state="InputPSD_Azimuth" unit="deg" value="45"/>
+<SETTING __key="settings" state="InputPSD_Ellipticity" unit="deg" value="0"/>
+<SETTING __key="settings" state="InputPSD_S1" value="0"/>
+<SETTING __key="settings" state="InputPSD_S2" value="1"/>
+<SETTING __key="settings" state="InputPSD_S3" value="0"/>
+<SETTING __key="settings" state="OutputPMD_Azimuth" unit="deg" value="0"/>
+<SETTING __key="settings" state="OutputPMD_Ellipticity" unit="deg" value="0"/>
+<SETTING __key="settings" state="OutputPMD_S1" value="1"/>
+<SETTING __key="settings" state="OutputPMD_S2" value="0"/>
+<SETTING __key="settings" state="OutputPMD_S3" value="0"/>
+<SETTING __key="settings" state="OutputPSD_Azimuth" unit="deg" value="45"/>
+<SETTING __key="settings" state="OutputPSD_Ellipticity" unit="deg" value="0"/>
+<SETTING __key="settings" state="OutputPSD_S1" value="0"/>
+<SETTING __key="settings" state="OutputPSD_S2" value="1"/>
+<SETTING __key="settings" state="OutputPSD_S3" value="0"/>
+<SETTING __key="settings" state="Active" value="Off"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="SignalAnalyzer_vtms1" master="URN:VPI_LIB::TC Modules\Analyzers\SignalAnalyzer.vtms:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" x="46.0" y="47.0"/>
+<SETTING __key="settings" state="SettingsSource" value="AnalyzerFile"/>
+<SETTING __key="settings" state="AnalyzerMode" value="StartAutomatically"/>
+<SETTING __key="settings" state="InitialAnalysisType" value="Scope"/>
+<SETTING __key="settings" state="Title" value="FF"/>
+<SETTING __key="settings" state="Settings" value=""/>
+<SETTING __key="settings" state="SettingsFile" value=""/>
+<SETTING __key="settings" state="InternalVisualizersList" value=""/>
+<SETTING __key="settings" state="Active" value="Off"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="AmpSysOpt_vtms1" master="URN:VPI_LIB::TC Modules\Optical Amplifiers\AmpSysOpt.vtms:" resVersion="7.5" showInstanceId="false">
+<GEOMETRY __key="geom" x="43.0" y="36.0"/>
+<SETTING __key="settings" state="AmplifierType" value="PowerControlled"/>
+<SETTING __key="settings" state="GainShapeDescription" value="GainShapeParameters"/>
+<SETTING __key="settings" state="Gain" unit="dB" value="4.257"/>
+<SETTING __key="settings" state="GainTilt" unit="dB/Hz" value="0"/>
+<SETTING __key="settings" state="GainTiltRefFreq" unit="Hz" value="193.1e12"/>
+<SETTING __key="settings" state="GainShapeFilename" value=""/>
+<SETTING __key="settings" state="OutputPowerMax" unit="W" value="1e6"/>
+<SETTING __key="settings" state="OutputPower" unit="W" value="1e-3"/>
+<SETTING __key="settings" state="GainMax" unit="dB" value="100.0"/>
+<SETTING __key="settings" state="SaturationPower" unit="W" value="10e-3"/>
+<SETTING __key="settings" state="SaturationPowerType" value="OutputPower"/>
+<SETTING __key="settings" state="NoiseDescription" value="NoiseFigureParameters"/>
+<SETTING __key="settings" state="NoiseFigure" unit="dB" value="0.0001"/>
+<SETTING __key="settings" state="NoisePower" unit="W" value="0.0"/>
+<SETTING __key="settings" state="NoiseTilt" unit="dB/Hz" value="0.0"/>
+<SETTING __key="settings" state="NoiseTiltRefFreq" unit="Hz" value="193.1e12"/>
+<SETTING __key="settings" state="NoiseFigureFilename" value=""/>
+<SETTING __key="settings" state="NoisePowerFilename" value=""/>
+<SETTING __key="settings" state="NoiseBandwidth" unit="Hz" value="4e3"/>
+<SETTING __key="settings" state="NoiseCenterFrequency" unit="Hz" value="194e12"/>
+<SETTING __key="settings" state="PolarizFilter" value="None"/>
+<SETTING __key="settings" state="FrequencyResolution" unit="Hz" value="100.0e9"/>
+<SETTING __key="settings" state="GridReferenceFrequency" unit="Hz" value="193.1e12"/>
+<SETTING __key="settings" state="NoiseDynamic" unit="dB" value="3.0"/>
+<SETTING __key="settings" state="NoiseResolution" unit="Hz" value="BitRateDefault/4"/>
+<SETTING __key="settings" state="NoiseThreshold" unit="dB" value="-100"/>
+<SETTING __key="settings" state="DigitalFilterOrder" value="64"/>
+<SETTING __key="settings" state="SampledSignals" value="On"/>
+<SETTING __key="settings" state="ParameterizedSignals" value="On"/>
+<SETTING __key="settings" state="Distortions" value="On"/>
+<SETTING __key="settings" state="NoiseBins" value="On"/>
+<SETTING __key="settings" state="RandomNumberSeed" value="0"/>
+<SETTING __key="settings" state="Active" value="On"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="FilterEl_vtms3" master="URN:VPI_LIB::TC Modules\Electrical Filters &amp; DSP\FilterEl.vtms:" resVersion="7.5" showInstanceId="false">
+<GEOMETRY __key="geom" x="117.0" y="36.0"/>
+<SETTING __key="settings" state="FilterType" value="LowPass"/>
+<SETTING __key="settings" state="A" value=""/>
+<SETTING __key="settings" state="B" value="1.0"/>
+<SETTING __key="settings" state="TransferFunction" value="Bessel"/>
+<SETTING __key="settings" state="Bandwidth" unit="Hz" value="RX_Bandwidth"/>
+<SETTING __key="settings" state="CenterFrequency" unit="Hz" value="40e9"/>
+<SETTING __key="settings" state="PassBandRipple" unit="dB" value="0.5"/>
+<SETTING __key="settings" state="FilterOrderDefinition" value="FilterOrder"/>
+<SETTING __key="settings" state="FilterOrder" value="4"/>
+<SETTING __key="settings" state="GaussianOrder" value="4"/>
+<SETTING __key="settings" state="StopBandwidth" unit="Hz" value="2*BitRateDefault"/>
+<SETTING __key="settings" state="StopbandAttenuation" unit="dB" value="100"/>
+<SETTING __key="settings" state="DataFilename" value="data.dat"/>
+<SETTING __key="settings" state="DataFormat" value="Frequency Magnitude"/>
+<SETTING __key="settings" state="LogScale" value="Automatic"/>
+<SETTING __key="settings" state="FrequencyShift" unit="Hz" value="0.0"/>
+<SETTING __key="settings" state="FrequencyScaling" value="1.0"/>
+<SETTING __key="settings" state="PowerScaling" value="1.0"/>
+<SETTING __key="settings" state="NumberOfStepAndRepeat" value="1"/>
+<SETTING __key="settings" state="FreeSpectralRange" unit="Hz" value="80e9"/>
+<SETTING __key="settings" state="MinimumLoss" unit="dB" value="0.0"/>
+<SETTING __key="settings" state="FrequencyAxisScaling" value="Linear"/>
+<SETTING __key="settings" state="MinimumPhase" value="Off"/>
+<SETTING __key="settings" state="InterpolationOrder" value="Cubic"/>
+<SETTING __key="settings" state="ExtrapolationType" value="LastPoint"/>
+<SETTING __key="settings" state="SetTransmission" unit="dB" value="-200"/>
+<SETTING __key="settings" state="SetPhase" unit="deg" value="0.0"/>
+<SETTING __key="settings" state="DigitalFilterOrder" value="64"/>
+<SETTING __key="settings" state="ConserveMemory" value="On"/>
+<SETTING __key="settings" state="InternalVisualizersList" value="Magnitude, Phase, Delay, ImpulseResponse"/>
+<SETTING __key="settings" state="MagnitudeTitle" value="Magnitude"/>
+<SETTING __key="settings" state="PhaseTitle" value="Phase"/>
+<SETTING __key="settings" state="DelayTitle" value="Delay"/>
+<SETTING __key="settings" state="ImpulseResponseTitle" value="Impulse Response"/>
+<SETTING __key="settings" state="VisualizationMode" value="None"/>
+<SETTING __key="settings" state="Title" value=""/>
+<SETTING __key="settings" state="SaveToFile" value="Off"/>
+<SETTING __key="settings" state="LogFilename" value=""/>
+<SETTING __key="settings" state="Magnitude" value="Off"/>
+<SETTING __key="settings" state="Phase" value="Off"/>
+<SETTING __key="settings" state="Delay" value="Off"/>
+<SETTING __key="settings" state="ImpulseResponse" value="Off"/>
+<SETTING __key="settings" state="Active" value="On"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="UnpackBlockEl_vtms3" master="URN:VPI_LIB::TC Modules\Signal Conversion\UnpackBlockEl.vtms:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" x="126.0" y="36.0"/>
+<SETTING __key="settings" state="SampleRate" unit="Hz" value="SampleRateDefault"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="Photodiode_vtms1" master="URN:VPI_LIB::TC Modules\Receivers\Photodiode.vtms:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" x="97.0" y="36.0"/>
+<SETTING __key="settings" state="ResponsivityDescription" value="ResponsivityParameter"/>
+<SETTING __key="settings" state="Responsivity" unit="A/W" value="0.65"/>
+<SETTING __key="settings" state="ResponsivityFilename" value=""/>
+<SETTING __key="settings" state="PhotodiodeModel" value="PIN"/>
+<SETTING __key="settings" state="DarkCurrent" unit="A" value="10e-9"/>
+<SETTING __key="settings" state="DarkCurrentMultiplied" unit="A" value="1e-8"/>
+<SETTING __key="settings" state="DarkCurrentNonMultiplied" unit="A" value="0"/>
+<SETTING __key="settings" state="AvalancheMultiplication" value="10"/>
+<SETTING __key="settings" state="IonizationCoefficient" value="0.2"/>
+<SETTING __key="settings" state="ThermalNoiseDescription" value="ThermalNoise"/>
+<SETTING __key="settings" state="ThermalNoise" unit="A/Hz^(1/2)" value="20e-12"/>
+<SETTING __key="settings" state="ShotNoise" value="On"/>
+<SETTING __key="settings" state="Temperature" unit="K" value="298"/>
+<SETTING __key="settings" state="Voltage" unit="V" value="10"/>
+<SETTING __key="settings" state="LoadResistance" unit="Ohm" value="50"/>
+<SETTING __key="settings" state="DarkCurrentDescription" value="RefPoints"/>
+<SETTING __key="settings" state="MultFactorDescription" value="RefPoints"/>
+<SETTING __key="settings" state="DarkCurrentFilename" value=""/>
+<SETTING __key="settings" state="MultFactorFilename" value=""/>
+<SETTING __key="settings" state="RefTemperature" unit="K" value="233 298 358"/>
+<SETTING __key="settings" state="RefVoltage1" unit="V" value="2"/>
+<SETTING __key="settings" state="RefVoltage2" unit="V" value="7"/>
+<SETTING __key="settings" state="RefDarkCurrent" unit="A" value="(1.5e-10, 10e-10) (1.5e-9, 10e-9) (7e-8, 2e-7)"/>
+<SETTING __key="settings" state="RefMultFactor" value="(1, 30) (1, 5.5) (1, 3.2)"/>
+<SETTING __key="settings" state="Algorithm" value="Average"/>
+<SETTING __key="settings" state="InputPowerLevel" unit="W" value="1e-6"/>
+<SETTING __key="settings" state="NoiseDynamic" unit="dB" value="3.0"/>
+<SETTING __key="settings" state="NoiseResolution" unit="Hz" value="BitRateDefault/4."/>
+<SETTING __key="settings" state="NoiseThreshold" unit="dB" value="-100"/>
+<SETTING __key="settings" state="JoinSignalBands" value="Yes"/>
+<SETTING __key="settings" state="RandomNumberSeed" value="0"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="Attenuator_vtms1" master="URN:VPI_LIB::TC Modules\Passive Components\Attenuator.vtms:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" x="78.0" y="36.0"/>
+<SETTING __key="settings" showOnSchematic="true" state="Attenuation" unit="dB" value="10"/>
+<SETTING __key="settings" state="Active" value="On"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="ViText_vtms2" master="URN:VPI_LIB::TC Modules\Analyzers\ViText.vtms:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" x="142.0" y="36.0"/>
+<SETTING __key="settings" state="Title" value=""/>
+<SETTING __key="settings" state="Geometry" value=""/>
+<SETTING __key="settings" state="Options" value=""/>
+<SETTING __key="settings" state="DecimalPlaces" value="-1"/>
+<SETTING __key="settings" state="OutputFilename" value="F:\source\100G-PAM4-DD\RX_X.csv"/>
+<SETTING __key="settings" state="Overwrite" value="OVERWRITE"/>
+<SETTING __key="settings" state="DisplayWindow" value="Off"/>
+<SETTING __key="settings" state="Active" value="On"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="UniversalFiberFwd_vtmg1" master="URN:VPI_LIB::TC Modules\Fibers\UniversalFiberFwd.vtmg:" resVersion="7.5" showInstanceId="false">
+<GEOMETRY __key="geom" x="51.0" y="36.0"/>
+<SETTING __key="settings" state="NumberOfFiberSpans" value="1"/>
+<SETTING __key="settings" state="Length" unit="m" value="FiberLength"/>
+<SETTING __key="settings" state="GroupRefractiveIndex" value="1.47"/>
+<SETTING __key="settings" state="AttenuationDescription" value="AttenuationParameter"/>
+<SETTING __key="settings" state="Attenuation" unit="dB/m" value="0"/>
+<SETTING __key="settings" state="AttFilename" value=""/>
+<SETTING __key="settings" state="ReferenceFrequency" unit="Hz" value="193.1e12"/>
+<SETTING __key="settings" state="DispersionDescription" value="DispersionParameters"/>
+<SETTING __key="settings" state="Dispersion" unit="s/m^2" value="Dispersion"/>
+<SETTING __key="settings" state="DispersionSlope" unit="s/m^3" value="0"/>
+<SETTING __key="settings" state="DispersionFilename" value=""/>
+<SETTING __key="settings" state="PMDCoefficient" unit="s/(m^1/2)" value="PMDCoefficient"/>
+<SETTING __key="settings" state="CorrelationLength" unit="m" value="50.0"/>
+<SETTING __key="settings" state="RamanScattering" value="No"/>
+<SETTING __key="settings" state="RamanFilename" value="$BNROOT/data/UFM/RamanGain.dat"/>
+<SETTING __key="settings" state="SpontaneousRamanScattering" value="No"/>
+<SETTING __key="settings" state="RamanAdjustmentFactors" value="0.5"/>
+<SETTING __key="settings" state="Temperature" unit="K" value="300.0"/>
+<SETTING __key="settings" state="NonlinearDescription" value="NonlinearIndexParameter"/>
+<SETTING __key="settings" state="NonLinearIndex" unit="m^2/W" value="0"/>
+<SETTING __key="settings" state="NonLinearFilename" value=""/>
+<SETTING __key="settings" state="CoreAreaDescription" value="CoreAreaParameter"/>
+<SETTING __key="settings" state="CoreArea" unit="m^2" value="80.0e-12"/>
+<SETTING __key="settings" state="CoreAreaFilename" value=""/>
+<SETTING __key="settings" state="OverlapIntegralFilename" value=""/>
+<SETTING __key="settings" state="RamanFraction" value="0.17"/>
+<SETTING __key="settings" state="SPM_EC" value="No"/>
+<SETTING __key="settings" state="XPM_EC" value="No"/>
+<SETTING __key="settings" state="XPM_MC" value="Yes"/>
+<SETTING __key="settings" state="IntraBandRaman" value="Yes"/>
+<SETTING __key="settings" state="InterBandRaman" value="Yes"/>
+<SETTING __key="settings" state="FWM" value="No"/>
+<SETTING __key="settings" state="HigherOrderNLEffects" value="No"/>
+<SETTING __key="settings" state="NonlinearAdjustmentFactors" value="1.0 1.0 1.0 1.0 0.5 1.0 1.0"/>
+<SETTING __key="settings" state="EventLossDescription" value="EventLossParameter"/>
+<SETTING __key="settings" state="EventLoss" unit="dB" value="0.0"/>
+<SETTING __key="settings" state="EventLossFilename" value=""/>
+<SETTING __key="settings" state="FreqResolutionNB" unit="Hz" value="100e9"/>
+<SETTING __key="settings" state="FreqResolutionSFB" unit="Hz" value="100e9"/>
+<SETTING __key="settings" state="GridReferenceFrequency" unit="Hz" value="193.1e12"/>
+<SETTING __key="settings" state="SpectralDiscretizerDescription" value="FixedFrequencies"/>
+<SETTING __key="settings" state="FWMThreshold" unit="(dBm)" value="-30.0"/>
+<SETTING __key="settings" state="FWMPowerSeed" unit="W" value="1e-10"/>
+<SETTING __key="settings" state="NoiseCenterFrequency" unit="Hz" value="193.1e12"/>
+<SETTING __key="settings" state="NoiseBandwidth" unit="Hz" value="10e12"/>
+<SETTING __key="settings" state="AccuracyGoal" unit="dB" value="0.001"/>
+<SETTING __key="settings" state="IterationAccuracyFactor" value="10.0"/>
+<SETTING __key="settings" state="InitialStepSize" unit="m" value="1000.0"/>
+<SETTING __key="settings" state="MinimumStepSize" unit="m" value="1.0"/>
+<SETTING __key="settings" state="SplitStepType" value="Symmetric"/>
+<SETTING __key="settings" state="MaxStepWidth" unit="m" value="1.0e3"/>
+<SETTING __key="settings" state="MaxPhaseChange" unit="deg" value="0.05"/>
+<SETTING __key="settings" state="MeanStepWidth" unit="m" value="1.0e3"/>
+<SETTING __key="settings" state="WidthDeviation" unit="m" value="100.0"/>
+<SETTING __key="settings" state="PolarizationAnalysis" value="VectorPMD"/>
+<SETTING __key="settings" state="FieldAnalysis" value="Yes"/>
+<SETTING __key="settings" state="SkipFieldAnalysis" value="0"/>
+<SETTING __key="settings" state="NoiseBinInteractions" value="No"/>
+<SETTING __key="settings" state="DistortionInteractions" value="No"/>
+<SETTING __key="settings" state="NoisePolarization" value="Unpolarized"/>
+<SETTING __key="settings" state="DistortionPolarization" value="Unpolarized"/>
+<SETTING __key="settings" state="WidthRandomNumberSeed" value="0"/>
+<SETTING __key="settings" state="ScatteringRandomNumberSeed" value="0"/>
+<SETTING __key="settings" state="FreezeWidth" value="0"/>
+<SETTING __key="settings" state="FreezeScattering" value="0"/>
+<SETTING __key="settings" state="CorrelationScatteringFactor" value="0.0"/>
+<SETTING __key="settings" state="BirefringenceProfile" value="None"/>
+<SETTING __key="settings" state="BirefringenceFileDataType" value="RotationMatrices"/>
+<SETTING __key="settings" state="BirefringenceInputFilename" value=""/>
+<SETTING __key="settings" state="BirefringenceOutputFilename" value=""/>
+<SETTING __key="settings" state="LikelihoodRatiosFilename" value=""/>
+<SETTING __key="settings" state="ConserveMemory" value="No"/>
+<SETTING __key="settings" state="NoiseRandomNumberSeed" value="0"/>
+<SETTING __key="settings" state="Active" value="On"/>
+<SETTING __key="settings" state="VisualizationMode" value="None"/>
+<SETTING __key="settings" state="Title" value=""/>
+<SETTING __key="settings" state="SaveToFile" value="Off"/>
+<SETTING __key="settings" state="LogFilename" value=""/>
+<SETTING __key="settings" state="PlotFrequencyRange" unit="Hz" value="(100e12, 1000e12)"/>
+<SETTING __key="settings" state="PowerPlotPoints" value="101"/>
+<SETTING __key="settings" state="SeparateWindows" value="Off"/>
+<SETTING __key="settings" state="Signals" value="Off"/>
+<SETTING __key="settings" state="NoiseBins" value="Off"/>
+<SETTING __key="settings" state="Distortions" value="Off"/>
+<SETTING __key="settings" state="CrosstalkDistortions" value="On"/>
+<SETTING __key="settings" state="RayleighDistortions" value="On"/>
+<SETTING __key="settings" state="BrillouinDistortions" value="On"/>
+<SETTING __key="settings" state="FWMDistortions" value="On"/>
+<SETTING __key="settings" state="GenericDistortions" value="On"/>
+<SETTING __key="settings" state="StokesVector" value="Off"/></INSTANCE>
+<INSTANCE __key="instances" instanceId="PAM4_TX_lnk1" master="URN:CHILD::PAM4_TX.vtmg:" resVersion="" showInstanceId="false">
+<GEOMETRY __key="geom" x="26.0" y="36.0"/>
+<SETTING __key="settings" state="factor" value="16"/>
+<SETTING __key="settings" state="OutputFilenamex1" value="D:\SP-PAM4-DD\X111.csv"/>
+<SETTING __key="settings" state="OutputFilenamex2" value="D:\SP-PAM4-DD\X112.csv"/>
+<SETTING __key="settings" showOnSchematic="true" state="RIN" unit="dB/Hz" value="-160"/>
+<SETTING __key="settings" showOnSchematic="true" state="LF_Active" value="On"/>
+<SETTING __key="settings" showOnSchematic="true" state="Bandwidth" unit="Hz" value="35e9"/>
+<SETTING __key="settings" state="FilterOrder" value="4"/>
+<SETTING __key="settings" state="RandomNumberSeed1" value="1"/>
+<SETTING __key="settings" state="RandomNumberSeed2" value="2000"/>
+<SETTING __key="settings" state="DriveAmplitude" unit="A, V" value="1"/>
+<SETTING __key="settings" state="Bias" unit="A, V" value="0.5"/>
+<SETTING __key="settings" showOnSchematic="true" state="CenterFrequency" unit="Hz" value="193.1e12"/>
+<SETTING __key="settings" showOnSchematic="true" state="AveragePower" unit="W" value="6.31e-3"/>
+<SETTING __key="settings" state="Linewidth" unit="Hz" value="Linewidth"/>
+<SETTING __key="settings" showOnSchematic="true" state="Ellipticity" unit="deg" value="0"/>
+<SETTING __key="settings" showOnSchematic="true" state="Azimuth" unit="deg" value="0"/></INSTANCE>
+<properties __key="properties"/>
+<LINK __key="links" inst1="FilterEl_vtms3" inst2="UnpackBlockEl_vtms3" points="120.0, 36.0, 123.0, 36.0" port1="output" port2="input" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="DownSample_vtms1" inst2="UnpackBlockEl_vtms3" points="132.0, 36.0, 129.0, 36.0" port1="input" port2="sample" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="DownSample_vtms1" inst2="ViText_vtms2" points="138.0, 36.0, 139.0, 36.0" port1="output" port2="inputY" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="SignalAnalyzer_vtms5" inst2="FilterEl_vtms3" points="120.0, 30.0, 120.0, 36.0" port1="input" port2="output" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="SignalAnalyzer_vtms7" inst2="FilterEl_vtms3" points="112.0, 31.0, 112.0, 36.0, 114.0, 36.0" port1="input" port2="input" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="AmpSysOpt_vtms1" inst2="UniversalFiberFwd_vtmg1" points="46.0, 36.0, 48.0, 36.0" port1="output" port2="input" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="UniversalFiberFwd_vtmg1" inst2="PMD_Emulator_vtms1" points="54.0, 36.0, 66.0, 36.0" port1="output" port2="input" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="PMD_Emulator_vtms1" inst2="Attenuator_vtms1" points="72.0, 36.0, 75.0, 36.0" port1="output" port2="input" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="111" inst2="AmpSysOpt_vtms1" points="47.0, 28.0, 47.0, 36.0, 46.0, 36.0" port1="input" port2="output" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="Photodiode_vtms1" inst2="FilterEl_vtms3" points="100.0, 36.0, 114.0, 36.0" port1="output" port2="input" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="Attenuator_vtms1" inst2="Photodiode_vtms1" points="81.0, 36.0, 94.0, 36.0" port1="output" port2="input" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="AmpSysOpt_vtms1" inst2="PAM4_TX_lnk1" points="40.0, 36.0, 29.0, 36.0" port1="input" port2="output_vtmy1" term1="0" term2="0" width="1"/>
+<LINK __key="links" inst1="SignalAnalyzer_vtms1" inst2="PAM4_TX_lnk1" points="43.0, 47.0, 29.0, 47.0, 29.0, 36.0" port1="input" port2="output_vtmy1" term1="0" term2="0" width="1"/>
+<TEXTBOX __key="texts" font="sansserif" fontsize="1.8" height="2.7083333" horizjust="left" instanceId="caption_PMD_Emulator_vtms1" text="DGD = 8e-12 s" textcol="black" vertjust="center" width="15.208333">
+<GEOMETRY __key="geom" x="72.4375" y="39.80625"/></TEXTBOX>
+<TEXTBOX __key="texts" font="sansserif" fontsize="1.8" height="3.1999998" horizjust="left" text="SP-PAM4 TX1" textcol="red" vertjust="center" width="13.2">
+<GEOMETRY __key="geom" x="26.599998" y="29.650002"/></TEXTBOX>
+<TEXTBOX __key="texts" font="sansserif" fontsize="1.8" height="2.7083333" horizjust="left" instanceId="caption_Attenuator_vtms1" text="Attenuation = 10 dB" textcol="black" vertjust="center" width="19.583332">
+<GEOMETRY __key="geom" x="84.07936" y="41.275"/></TEXTBOX>
+<TEXTBOX __key="texts" font="sansserif" fontsize="3.0" height="5.0" horizjust="left" text="SP-PAM4-DD system" textcol="red" vertjust="center" width="54.0">
+<GEOMETRY __key="geom" x="73.6" y="9.15"/></TEXTBOX>
+<TEXTBOX __key="texts" bordercol="black" boxcol="white" font="dialog" fontsize="1.8" height="28.571428" horizjust="left" instanceId="schematic_parameters" text="SCHEMATIC PARAMETERS:\nRX_Bandwidth = 35e9 Hz\nRandomNumberSeed = 8 \ndownSample = 8 \nTimeWindow = 32768/BitRateDefault s\nBitRateDefault = 56e9 bit/s\nSampleRateDefault = 16*BitRateDefault Hz\nFiberLength = 10e3 m\nDispersion = 17e-6 s/m^2\nPMDCoefficient = 0.1e-12/31.62 s/sqrt(m)\nLinewidth = 5e6 Hz\nLO_offset = 0e9 Hz\n" textcol="black" vertjust="center" width="42.857143">
+<GEOMETRY __key="geom" x="23.0" y="15.0"/></TEXTBOX>
+<TEXTBOX __key="texts" font="sansserif" fontsize="0.8" height="6.964286" horizjust="left" instanceId="caption_PAM4_TX_lnk1" text="RIN = -160 dB/Hz\nLF_Active = On \nBandwidth = 35e9 Hz\nCenterFrequency = 193.1e12 Hz\nAveragePower = 6.31e-3 W\nEllipticity = 0 deg\nAzimuth = 0 deg" textcol="black" vertjust="center" width="14.464286">
+<GEOMETRY __key="geom" x="31.232143" y="42.025"/></TEXTBOX>
+<GRAPHDEF __key="graphics"/></TOPOLOGY></CONTENTS></ENCRYPTION>
+<ICONDEF __key="icon" bounds="-2.0, -2.0, 2.0, 2.0">
+<body __key="body">
+<rect_body __key="gprim" linecolor="black" position="-2.0, -2.0" size="4.0, 4.0"/></body>
+<decoration __key="decoration">
+<rect __key="gprim" fillcolor="white" position="-2.0, -2.0" size="4.0, 4.0"/>
+<rect __key="gprim" fillcolor="white" linecolor="black" position="-2.0, -2.0" size="4.0, 4.0"/>
+<polygon __key="gprim" fillcolor="blue" points="-1.0, 0.0, -2.0, 1.0, -1.4, 0.2, -2.0, 0.16, -2.0, -0.16, -1.4, -0.2, -2.0, -1.0"/>
+<polygon __key="gprim" fillcolor="blue" points="2.0, 0.0, 1.0, 1.0, 1.6, 0.2, 1.0, 0.16, 1.0, -0.16, 1.6, -0.2, 1.0, -1.0"/>
+<rect __key="gprim" linecolor="black" position="-0.5, 1.2" size="1.0, 0.6"/>
+<line __key="gprim" linecolor="black" points="-1.1, 1.5, -0.5, 1.5"/>
+<line __key="gprim" linecolor="black" points="0.5, 1.5, 1.1, 1.5"/>
+<line __key="gprim" linecolor="black" points="-1.2, -0.6, 1.2, -0.6"/>
+<oval __key="gprim" linecolor="black" position="-1.0, -1.8" size="1.2, 1.2"/>
+<oval __key="gprim" linecolor="black" position="-0.2, -1.8" size="1.2, 1.2"/>
+<polygon __key="gprim" points="0.5, 0.3, -0.5, 0.9, -0.5, -0.3"/>
+<line __key="gprim" linecolor="black" points="-1.0, 0.3, -0.5, 0.3"/>
+<line __key="gprim" linecolor="black" points="0.5, 0.3, 1.0, 0.3"/></decoration></ICONDEF>
+<INTERFACE __key="interface">
+<STATEDEF __key="states" category="Enhanced" label="RX_Bandwidth" objectId="RX_Bandwidth" type="float">
+<SETTING __key="default" showOnSchematic="true" state="RX_Bandwidth" unit="Hz" value="35e9"/></STATEDEF>
+<STATEDEF __key="states" category="Enhanced" desc="Lookup index to use for noise generation. A value of zero implies an automatic, unique  seed." label="RandomNumberSeed" objectId="RandomNumberSeed" type="float">
+<UNITDEF __key="unit" type="string" unit=""/>
+<SETTING __key="default" showOnSchematic="true" state="RandomNumberSeed" value="8"/>
+<RANGEDEF __key="range" action="abort" bounds="closed" maximum="10000" minimum="0"/></STATEDEF>
+<STATEDEF __key="states" category="General" desc="Downsample factor." label="downSample" objectId="downSample" type="int">
+<SETTING __key="default" showOnSchematic="true" state="downSample" value="8"/></STATEDEF>
+<STATEDEF __key="states" category="Global" desc="The duration of each block of data. Each 'run' iteration will simulate this amount of time. Usually set to the value of (2^n)/BitRateDefault, where n is an integer. The ultimate spectral resolution will be equal to 1/TimeWindow." label="TimeWindow" objectId="TimeWindow" type="float">
+<SETTING __key="default" showOnSchematic="true" state="TimeWindow" unit="s" value="32768/BitRateDefault"/>
+<RANGEDEF __key="range" action="abort" bounds="open" maximum="inf" minimum="0"/></STATEDEF>
+<STATEDEF __key="states" category="Global" desc="Allows simulations with the number of the signal samples whose Greatest Prime Factor (GPF) does not exceed the specified limit. For example, for 150 samples the GPF is equal to 5 (150 = 2x3x5x5). If the signal is resampled during simulation the new sample rate may be automatically adjusted (increased) to satisfy the above condition. Holding the GPF limit is important to ensure high speed of the Fast Fourier Transform that is widely used in simulations. The highest speed is achieved with the default setting 2, which is equivalent to the condition that the number of samples is an integer power of two. It is recommended to set the GPF limit not larger than 13. Setting it to -1 will deactivate the GPF limiting, which allows to simulate an arbitrary number of samples in the signal." label="GreatestPrimeFactorLimit" objectId="GreatestPrimeFactorLimit" path="" type="int">
+<SETTING __key="default" state="GreatestPrimeFactorLimit" value="2"/>
+<RANGEDEF __key="range" action="abort" bounds="open" maximum="inf" minimum="-1"/></STATEDEF>
+<STATEDEF __key="states" category="Global" desc="If OFF, noise generated by amplifiers will be added to the sampled bands, where they exist, as random fields (and will be added to Noise Bins elsewhere in the spectrum). If ON, this noise will be kept as the statistics in Noise Bins (that is, NoiseBins will cover the entire spectrum). Set to ON for deterministic BER estimation." label="InBandNoiseBins" objectId="InBandNoiseBins" type="enumeration">
+<SETTING __key="default" state="InBandNoiseBins" value="OFF"/>
+<ENUMDEF __key="enumerations" value="ON"/>
+<ENUMDEF __key="enumerations" value="OFF"/></STATEDEF>
+<STATEDEF __key="states" category="Global" desc="Periodic Boundary Conditions should be used in most cases; each Block will represent a separate 'experiment' representing all time. Aperiodic Boundary Conditions are used for Active Photonics simulations, as well as for WDM simulations studying transients in EDFAs, semiconductor lasers and amplifiers and in some other applications, where subsequent blocks represent parts of a continuing waveform. Mixed Boundary Conditions should be used when it is necessary to combine different types of boundary conditions in one simulation." label="BoundaryConditions" objectId="BoundaryConditions" type="enumeration">
+<SETTING __key="default" state="BoundaryConditions" value="Periodic"/>
+<ENUMDEF __key="enumerations" value="Periodic"/>
+<ENUMDEF __key="enumerations" value="Aperiodic"/>
+<ENUMDEF __key="enumerations" value="Mixed"/></STATEDEF>
+<STATEDEF __key="states" category="Global" desc="LogicalInformation is generated by transmitters and is used to reconstruct transmitted data for BER estimation and clock recovery. Turning OFF logical information saves memory. LogicalInformation = OFF is particularly useful for Active Photonics simulations." label="LogicalInformation" objectId="LogicalInformation" type="enumeration">
+<SETTING __key="default" state="LogicalInformation" value="ON"/>
+<ENUMDEF __key="enumerations" value="ON"/>
+<ENUMDEF __key="enumerations" value="OFF"/></STATEDEF>
+<STATEDEF __key="states" category="Global" desc="This sets the simulated bandwidth (the sample rate) of transmitters and modules when producing 'samples' at their outputs (OutputDataType = samples). This parameter is typically only used in Active Photonics simulations ('Sample Mode'). If OutputDataType = samples, the SampleRate parameter of transmitter modules is overridden by SampleModeBandwidth." label="SampleModeBandwidth" objectId="SampleModeBandwidth" type="float">
+<SETTING __key="default" state="SampleModeBandwidth" unit="Hz" value="1280e9"/>
+<RANGEDEF __key="range" action="abort" bounds="open" maximum="inf" minimum="0"/></STATEDEF>
+<STATEDEF __key="states" category="Global" desc="This sets the center optical frequency of the simulated bandwidth of transmitters and modules when producing 'samples' at their outputs (OutputDataType = samples). This parameter is typically only used in Active Photonics simulations ('Sample Mode'). In other simulations, the simulated bandwidth is centered around the emission frequency." label="SampleModeCenterFrequency" objectId="SampleModeCenterFrequency" type="float">
+<SETTING __key="default" state="SampleModeCenterFrequency" unit="Hz" value="193.1e12"/>
+<RANGEDEF __key="range" action="abort" bounds="open" maximum="inf" minimum="0"/></STATEDEF>
+<STATEDEF __key="states" category="Global" desc="This parameter is passed by reference to many transmitter modules (their default BitRate = BitRateDefault), and so can be used to set the bit rate of each channel. Usually set to 2.5e9, 10e9 or 40e9." label="BitRateDefault" objectId="BitRateDefault" type="float">
+<SETTING __key="default" showOnSchematic="true" state="BitRateDefault" unit="bit/s" value="56e9"/>
+<RANGEDEF __key="range" action="abort" bounds="open" maximum="inf" minimum="0"/></STATEDEF>
+<STATEDEF __key="states" category="Global" desc="This parameter is passed by reference to many transmitter and other modules (their default SampleRate = SampleRateDefault), and so can be used to set the simulation bandwidth of each channel. Usually set to the value of (2^m)*BitRateDefault, where m is an integer (typically 4,5,6). If channel simulation bands overlap, they will combine." label="SampleRateDefault" objectId="SampleRateDefault" type="float">
+<SETTING __key="default" showOnSchematic="true" state="SampleRateDefault" unit="Hz" value="16*BitRateDefault"/>
+<RANGEDEF __key="range" action="abort" bounds="open" maximum="inf" minimum="0"/></STATEDEF>
+<STATEDEF __key="states" category="Global" label="FiberLength" objectId="FiberLength" path="Global/Link" type="int">
+<SETTING __key="default" showOnSchematic="true" state="FiberLength" unit="m" value="10e3"/></STATEDEF>
+<STATEDEF __key="states" category="Global" label="Dispersion" objectId="Dispersion" path="Global/Link" type="float">
+<SETTING __key="default" showOnSchematic="true" state="Dispersion" unit="ps/(nm.km)" value="17e-6"/></STATEDEF>
+<STATEDEF __key="states" category="Global" label="PMDCoefficient" objectId="PMDCoefficient" path="Global/Link" type="float">
+<SETTING __key="default" showOnSchematic="true" state="PMDCoefficient" unit="s/sqrt(m)" value="0.1e-12/31.62"/></STATEDEF>
+<STATEDEF __key="states" category="Global" desc="Full-Width Half-Maximum linewidth." label="Linewidth" objectId="Linewidth" path="Global/Laser" type="float">
+<UNITDEF __key="unit" type="string" unit="Hz"/>
+<SETTING __key="default" showOnSchematic="true" state="Linewidth" unit="Hz" value="5e6"/>
+<RANGEDEF __key="range" action="abort" bounds="rightopen" maximum="inf" minimum="0"/></STATEDEF>
+<STATEDEF __key="states" category="Global" label="LO_offset" objectId="LO_offset" path="Global/Laser" type="int">
+<SETTING __key="default" showOnSchematic="true" state="LO_offset" unit="Hz" value="0e9"/></STATEDEF>
+<STATEDEF __key="states" category="DesignRules" desc="This defines how the tracking of parameterized signals properties is performed. If set to None, no tracking is performed. If set to FinalValues, only final values are saved. If set to Detailed, the tracking information about the parameterized signal properties is saved along the propagation path." label="TrackingMode" objectId="TrackingMode" type="enumeration">
+<SETTING __key="default" state="TrackingMode" value="None"/>
+<ENUMDEF __key="enumerations" value="None"/>
+<ENUMDEF __key="enumerations" value="FinalValues"/>
+<ENUMDEF __key="enumerations" value="Detailed"/></STATEDEF>
+<STATEDEF __key="states" category="DesignRules" desc="This defines the interval over z of saving the signal properties in distributed modules (fibers)" label="TrackingStepSize" objectId="TrackingStepSize" type="float">
+<SETTING __key="default" state="TrackingStepSize" unit="m" value="1e4"/>
+<CONTEXTDEF __key="context" enumeration="" expression="( $TrackingMode==&quot;Detailed&quot; )" value=""/>
+<RANGEDEF __key="range" action="abort" bounds="open" maximum="inf" minimum="0"/></STATEDEF>
+<STATEDEF __key="states" category="DesignRules" desc="This defines the initial value for effective optical bandwidth used for BER calculation" label="OpticalBandwidth" objectId="OpticalBandwidth" type="float">
+<SETTING __key="default" state="OpticalBandwidth" unit="Hz" value="4*BitRateDefault"/>
+<CONTEXTDEF __key="context" enumeration="" expression="($TrackingMode != &quot;None&quot;)" value=""/>
+<RANGEDEF __key="range" action="abort" bounds="open" maximum="inf" minimum="0"/></STATEDEF>
+<STATEDEF __key="states" category="DesignRules" desc="This defines the initial value for effective electrical bandwidth used for BER calculation" label="ElectricalBandwidth" objectId="ElectricalBandwidth" type="float">
+<SETTING __key="default" state="ElectricalBandwidth" unit="Hz" value="0.75*BitRateDefault"/>
+<CONTEXTDEF __key="context" enumeration="" expression="($TrackingMode != &quot;None&quot;)" value=""/>
+<RANGEDEF __key="range" action="abort" bounds="open" maximum="inf" minimum="0"/></STATEDEF></INTERFACE></MASTER2>
